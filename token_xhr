@@ -3,6 +3,7 @@ $.ajax({
     beforeSend: function(xhr) { 
       xhr.setRequestHeader("Authorization", "Token c5de7ee89c1925924dbf0cfd0087b9642fb8cd5c"); 
     },
+    //$.support.cors = true;
     type: 'GET',
     dataType: 'json',
     contentType: 'application/json',
