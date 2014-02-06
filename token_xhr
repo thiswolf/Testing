@@ -1,0 +1,15 @@
+$.ajax({
+    url: "http://formhub.org/api/v1/data/north_ghana/8379",
+    beforeSend: function(xhr) { 
+      xhr.setRequestHeader("Authorization", "Token c5de7ee89c1925924dbf0cfd0087b9642fb8cd5c"); 
+    },
+    type: 'GET',
+    dataType: 'json',
+    contentType: 'application/json',
+    success: function (data) {
+      alert('Data was fetched');
+    },
+    error: function(){
+      alert("Cannot get data");
+    }
+});
