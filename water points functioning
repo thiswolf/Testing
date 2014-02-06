@@ -1,0 +1,5 @@
+$.each(data,function(k,v){
+if(v['water_point_condition'] === 'functioning'){
+console.log($(data).find(v['water_point_condition'] === 'functioning').length);
+}
+});
